@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 1 - Pop up form</title>
+    </head>
+    <div style="background-image: url('bgimage.png');"></div>
+    <body>
+      
+        <link rel="stylesheet" href="Index.CSS">
+        <script src="Index.JS"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <h2>Responsive Form with Pop-up feature</h2>
+        <h3>Flight Booking coupon codes can be copied by clicking on the coupon</h3>
+
+        
+        <div class="container">
+          <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Enter your Name">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder=" Enter your Last name">
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">E- Mail ID</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="email" name="lastname" placeholder=" Enter your E-mail ID">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-25">
+              <label for="phone">Phone Number</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Phone" name="phone" placeholder=" Enter your Phone Number">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-25">
+              <label for="ccode">Coupon code</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Ccode" name="Coupon Code" placeholder="Paste Coupon Code here">
+            </div>
+          </div>
+          <br>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click here to Check out offers</button>
+          <br>
+          <br>
+          <div class="row" >
+            <input type="submit" value="Submit">
+          </div>
+          </form>
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>DEALS FOR YOU!</h1>
+                    <h3>Click on Coupon to Copy code</h3>
+                </div>
+                    <div class="modal-body">
+                        <div class="grid-container">
+                            <input type="text" value="LOOK500" id="myInput1">
+                            <button onclick="myFunction1()"><strong>Flat Rs.500 OFF </strong><br> *Valid on min 3 Tickets</button>
+                            <input type="text" value="BOOK500" id="myInput2">
+                            <button onclick="myFunction2()"><strong>Flat Rs.500 OFF </strong><br> *Valid on min 2 Tickets</button>
+                            <input type="text" value="MY1000" id="myInput3">
+                            <button onclick="myFunction3()"><strong>Flat Rs.200 OFF </strong><br> *Valid on Booking above 1000</button>
+                            <input type="text" value="MY1000" id="myInput4">
+                            <button onclick="myFunction4()"><strong>Flat Rs.200 OFF </strong><br> *Valid till 30th May</button>
+                        </div>
+                    </div>     
+        </body>
+</html>
