@@ -27,7 +27,4 @@ function myFunction1() {
     alert("Copied the text: " + copyText.value);
   }
 
-  var whoops = new Whoops({
-    message: "Hello World!",
-    type: "warning" // success, danger
-});
+ 
